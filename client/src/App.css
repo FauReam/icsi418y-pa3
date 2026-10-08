@@ -1,0 +1,199 @@
+.app {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 8px 20px;
+    border: 1px solid #888;
+    background: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #646cff;
+    border-color: #646cff;
+    color: #fff;
+}
+
+.card {
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 24px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card.wide {
+    max-width: 720px;
+    text-align: left;
+}
+
+.card.wide h2,
+.card.wide h3 {
+    text-align: center;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form.inline {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 16px;
+}
+
+form.inline select {
+    flex: 1;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #888;
+    font-size: 14px;
+    font-family: inherit;
+    background: #fff;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+label {
+    text-align: left;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: -6px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.field label {
+    margin-bottom: 0;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #646cff;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #535bf2;
+}
+
+button.secondary {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid #888;
+    background: none;
+    cursor: pointer;
+}
+
+button.danger {
+    padding: 4px 12px;
+    border-radius: 6px;
+    border: none;
+    background: #cf222e;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.danger:hover {
+    background: #a40e26;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    border-bottom: 2px solid #444;
+}
+
+.member-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.member-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 4px;
+    border-bottom: 1px solid #ddd;
+}
+
+.badge {
+    margin-left: 8px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: #dafbe1;
+    color: #1a7f37;
+    font-size: 12px;
+}
+
+.empty {
+    color: #666;
+    text-align: center;
+}
+
+.message {
+    margin-top: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.message.success {
+    color: #1a7f37;
+    background: #dafbe1;
+}
+
+.message.error {
+    color: #cf222e;
+    background: #ffebe9;
+}
