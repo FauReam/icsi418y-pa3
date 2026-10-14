@@ -48,7 +48,8 @@ app.post("/signup", async (req, res) => {
     }
 
     try {
-        const existing = await users.findOne({ username: username });
+        const existing = await users
+            .findOne({ username: username }, { collation: { locale: "en", strength: 2 } });
         if (existing) {
             return res.status(409).json({
                 message: "Username already exists"
@@ -83,7 +84,8 @@ app.post("/login", async (req, res) => {
     }
 
     try {
-        const user = await users.findOne({ username: username });
+        const user = await users
+            .findOne({ username: username }, { collation: { locale: "en", strength: 2 } });
         if (!user) {
             return res.status(401).json({
                 message: "Username does not exist"
